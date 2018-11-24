@@ -1,1 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
 @import './components/card';
+
+body {
+    background: #f3f3f3;
+    margin: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+th, 
+td {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}

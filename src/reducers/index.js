@@ -1,9 +1,11 @@
 const initialState = {
     cards: [
         {
-            title: 'Test Card'
+            title: 'Test Card',
+            totalTime: '6.25'
         }
-    ]
+    ],
+    cardStackGrid: false
 }
 
 function timeCardsApp(state = initialState, action) {
@@ -13,9 +15,14 @@ function timeCardsApp(state = initialState, action) {
                 cards: [
                     ...state.cards,
                     {
-                        title: action.title
+                        title: action.title,
+                        totalTime: '0.0h'
                     }
                 ]
+            })
+        case 'TOGGLE_CARDSTACK_LAYOUT': 
+            return Object.assign({}, state, {
+                cardStackGrid: !state.cardStackGrid 
             })
         default:
             return state;
