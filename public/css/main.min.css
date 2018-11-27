@@ -22,14 +22,16 @@
   display: grid;
   grid-template-columns: 1fr;
   padding-top: 20px; }
-  .card-stack.stack .card + .card {
-    margin-top: -12px; }
-  .card-stack.stack .card-body {
-    display: none; }
-  .card-stack.stack .card:hover {
-    transform: translate(6px, -6px); }
-    .card-stack.stack .card:hover .card-body {
-      display: block; }
+  .card-stack.stack {
+    max-width: 400px; }
+    .card-stack.stack .card + .card {
+      margin-top: -12px; }
+    .card-stack.stack .card-body {
+      display: none; }
+    .card-stack.stack .card:hover {
+      transform: translate(6px, -6px); }
+      .card-stack.stack .card:hover .card-body {
+        display: block; }
   .card-stack.grid {
     grid-template-columns: 1fr 1fr;
     grid-gap: 12px; }

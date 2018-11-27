@@ -31,6 +31,8 @@
     padding-top: 20px;
 
     &.stack {
+	max-width: 400px;	
+
         .card + .card {
             margin-top: -12px;
         }

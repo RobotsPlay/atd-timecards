@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 
 import timeCardsApp from './reducers';
 import AddCard from './containers/AddCard';
-import CardList from './containers/CardList';
+import CardStack from './containers/CardStack';
 import ToggleCardstackLayout from './containers/ToggleCardstackLayout';
 
 import './sass/main.scss';
@@ -18,7 +18,7 @@ ReactDOM.render(
         <div>
             <ToggleCardstackLayout />
             <AddCard />
-            <CardList />
+            <CardStack />
         </div>
     </Provider>,
     document.getElementById('root')
